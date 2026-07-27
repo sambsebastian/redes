@@ -1,0 +1,172 @@
+body {
+    background-color: #121212; /* Fondo oscuro elegante */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.tarjeta {
+    background-color: #1e1e1e; /* Tarjeta oscura un poco más clara que el fondo */
+    width: 320px;
+    padding: 35px 25px;
+    border-radius: 16px;
+    border: 1px solid #333333; /* Borde sutil para separar */
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #a0a0a0; /* Texto secundario en gris claro */
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/*Estilo para el botón*/
+button {
+    background-color: #00ff5e;
+    color: black;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: #23924a; /* Un verde un poco más claro */
+    transform: translateY(-2px); /* Se eleva ligeramente */
+    transition: all 0.2s ease;   /* Hace que el movimiento sea suave */
+}
+/*Tamaño de la imagen*/
+img {
+    width: 100px;           /* Ajusta el ancho como quieras */
+    height: 100px;          /* Asegúrate de que ancho y alto sean iguales */
+    border-radius: 50%;     /* Esto la hace redonda */
+    object-fit: cover;      /* Si la foto no es cuadrada, esto evita que se estire */
+    border: 3px solid #3d3d3d; /* Un borde sutil que combina con tu tema oscuro */
+
+}
+
+img:hover {
+    opacity: 1; /* Cobra 100% de brillo al pasar el mouse */
+}
+
+/* Imagen de perfil redonda */
+.perfil-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 2px solid #333333;
+}
+
+/* Contenedor de enlaces */
+.enlaces {
+    display: flex;
+    flex-direction: column; /* Alinea los botones uno debajo de otro */
+    gap: 12px;              /* Espacio entre cada botón */
+    margin-top: 20px;
+}
+
+/* Estilo base para todos los botones de redes */
+.btn {
+    display: block;
+    padding: 12px 20px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #3d3d3d;
+    transition: all 0.2s ease;
+}
+
+/* Efecto al pasar el cursor o presionar */
+/* --- ESTADO NORMAL DE TODOS LOS BOTONES --- */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: #262626;  /* Fondo oscuro uniforme */
+    color: #ffffff;             /* Texto e icono blancos en reposo */
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid #3d3d3d;  /* Borde gris discreto */
+    transition: all 0.25s ease;  /* Transición suave al pasar el mouse */
+    margin-bottom: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 1.2em;
+    transition: color 0.25s ease;
+}
+
+
+/* --- COLORES DINÁMICOS ÚNICAMENTE AL PASAR EL CURSOR (HOVER) --- */
+
+/* WhatsApp: Verde neón al hover */
+.btn.whatsapp:hover {
+    border-color: #25d366;
+    color: #25d366;
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.2); /* Resplandor suave opcional */
+}
+
+/* Instagram: Rosa al hover */
+.btn.instagram:hover {
+    border-color: #ff6b81;
+    color: #ff6b81;
+    box-shadow: 0 0 10px rgba(255, 107, 129, 0.2);
+}
+
+/* GitHub: Blanco puro al hover */
+.btn.github:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+/* TikTok: Turquesa/Cian al hover */
+.btn.tiktok:hover {
+    border-color: #00f2fe;
+    color: #00f2fe;
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+}
+
+/* --- ESTILO HOVER PARA EL BOTÓN DE CORREO --- */
+.btn.email:hover {
+    border-color: #ea4335;                       /* Color rojo característico de Gmail / Correo */
+    color: #ea4335;
+    box-shadow: 0 0 10px rgba(234, 67, 53, 0.2);  /* Resplandor suave al pasar el cursor */
+}
+
+.tarjeta {
+    animation: aparecer 0.8s ease-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
